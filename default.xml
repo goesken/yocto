@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <!-- REMOTES -->
+
+    <remote  name="github"     alias="origin"     fetch="https://github.com" />
+    <remote  name="yocto"      alias="origin"     fetch="https://git.yoctoproject.org" />
+
+
+    <!-- PROJECTS -->
+
+    <!-- my own repositories -->
+    <project  name="goesken/yocto"                      path="."                        remote="github"     revision="main" />
+
+    <!-- basic yocto stuff -->
+    <project  name="openembedded/meta-openembedded"     path="oe/meta-openembedded"     remote="github"     revision="master" />
+    <project  name="poky"                               path="oe/poky"                  remote="yocto"      revision="master" />
+
+    <!-- hardware support -->
+    <project  name="agherzan/meta-raspberrypi"          path="oe/meta-raspberrypi"      remote="github"     revision="master" />
+
+    <!-- additional software -->
+
+
+</manifest>
+
+
